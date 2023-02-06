@@ -1,0 +1,109 @@
+body{
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 16px;
+  background: #373737;
+}
+
+a{
+  color: #C1C1C1;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.ContenedorPrincipal {
+  width: 90%;
+  margin: auto;
+}
+
+/* Navigation */
+.Nav-Main {
+  margin: 10px 0px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.Nav-Brand {
+  width: 100px;
+}
+
+/* Navbar Left */
+.Nav-Main ul {
+  display: flex;
+}
+
+.Nav-Main ul li {
+  padding: 10px;
+}
+
+.Nav-Main ul li a {
+  padding: 2px;
+}
+
+.Nav-Main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.Nav-Main ul.Nav-Menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+/* Responsive Button */
+.Menu-Boton {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  color: #fff;
+  display: none;
+  z-index: 2;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("../Imagenes/showcase2.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
