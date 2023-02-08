@@ -1,9 +1,12 @@
+// --- Nicolas Cuervo --- //
+
 document.querySelector(".Menu-Boton").addEventListener("click", () => {
   document.querySelector(".Nav-Menu").classList.toggle("show");
 });
 
-ScrollReveal().reveal('.news-cards', { delay: 500 });
-ScrollReveal().reveal('.two-cards', { delay: 500 });
-ScrollReveal().reveal('.cards-banner-one', { delay: 500 });
-ScrollReveal().reveal('.cards-banner-two', { delay: 500 });
+ScrollReveal().reveal('.Header-Contenido-Principal', { delay: 500 });
+ScrollReveal().reveal('.Div-Varios-Temas', { delay: 500 });
+ScrollReveal().reveal('.Seccion-Politica-Publicidad', { delay: 500 });
+ScrollReveal().reveal('.Seccion-Noticia-Dia', { delay: 500 });
 
+// ©Nicolas Rojas 2022 Todos los derechos reservados //
