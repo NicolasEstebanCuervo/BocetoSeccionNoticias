@@ -78,6 +78,7 @@ hr {
   padding: 10px 20px;
   background: #262626;
   font-size: 15px;
+  color: #F6FF98;
   border: 1px solid #fff;
 }
 
@@ -87,15 +88,15 @@ hr {
 
 .showcase {
   width: 100%;
-  height: 550px;
   background: url("../Imagenes/showcase2.jpg") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: flex-end;
-  padding-bottom: 50px;
+  justify-content: center;
+  padding:50px 150px;
   margin-bottom: 20px;
+  border-radius: 10px;
   color: #fff;
 }
 
@@ -106,4 +107,254 @@ hr {
 
 .showcase .btn {
   margin-top: 20px;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 70px 0;
+
+}
+
+.news-cards img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-cards a {
+  padding: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.Card-Individual{
+
+  padding: 10px;
+  
+}
+
+.two-cards img{
+
+  width: 100%;
+  height: 350px;
+  object-fit:cover ;
+ 
+}
+
+.Card-Individual h1 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.Card-Two{
+
+  background-color: #F6FF98;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.Card-Two a {
+  font-size: 17px;
+  margin: 20px 0;
+}
+
+
+.Card-Individual:hover {
+
+  background-color: #616161;
+  border-radius: 10px;
+
+}
+
+/* CARDS BANNER ONE */
+.cards-banner-one {
+  width: 100%;
+  background-color:#F6FF98;
+  border-radius: 10px;
+  margin-bottom: 40px;
+
+}
+
+.cards-banner-one .content {
+  width: 40%;
+  padding: 30px 0 30px 30px;
+  color: #262626;
+}
+
+.cards-banner-one p{
+  margin: 10px 0 20px 0;
+}
+
+.two-cards{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+  margin: 70px 0;
+
+}
+
+.social {
+  margin: 50px;
+  color: #fff;
+
+}
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.links a {
+  margin: 10px 30px;
+}
+
+.links a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.links a i {
+  font-size: 3rem;
+}
+
+/* Links */
+.footer-links {
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container h3{
+  font-size: 20px;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+}
+
+.footer-links li {
+  line-height: 2.8;
+}
+
+.footer-links li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.footer {
+  background:#2f3640;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.footer h3 {
+
+  color: #fff;
+
+}
+
+/* Mobil */
+@media (max-width: 750px) {
+  .Menu-Boton {
+    display: block;
+  }
+
+  .Menu-Boton:hover {
+    opacity: 0.5;
+  }
+
+  .Nav-Main ul.Nav-Menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .Nav-Main ul.Nav-Menu li {
+    padding: 20px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+
+  .Nav-Main ul.Nav-Menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .Nav-Main ul.Nav-Menu.show {
+    transform: translateX(-20px);
+  }
+
+  .Nav-Main ul.Nav-Menu-right {
+    margin-right: 50px;
+  }
+
+  .news-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .two-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 80%;
+  }
+
+  .footer-links .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .news-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-banner-one .content,
+  .cards-banner-two .content {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .footer-links .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links .footer-container ul {
+    text-align: center;
+  }
 }
