@@ -326,7 +326,7 @@ hr {
     transition: transform 0.5s ease-in-out;
   }
 
-  .SubDivHeader-Contenido-Principal{
+  .Div-Contenido-Principal{
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }  
