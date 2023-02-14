@@ -345,10 +345,6 @@ hr {
     transform: translateX(-20px);
   }
 
-  .Nav-Main ul.Nav-Menu-Right {
-    margin-right: 50px;
-  }
-
   .Div-Varios-Temas {
     grid-template-columns: repeat(1, 1fr);
   }
